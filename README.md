@@ -14,7 +14,7 @@
 ## 🌟 Sections & Highlights
 
 1. **Hero Section**:
-   - Procedural HTML5 Canvas rendering multi-layered sine-wave ocean physics, celestial stars, and an explorer ship silhouette.
+   - Procedural HTML5 Canvas rendering multi-layered sine-wave ocean physics, celestial stars, and an explorer galleon silhouette.
    - Smooth entrance animations powered by GSAP.
    - Functional navigation CTA buttons (`[ EXPLORE MY JOURNEY ]`, `[ VIEW PROJECTS ]`).
 
@@ -24,7 +24,7 @@
 3. **Skills**:
    - Clean categorized skill badges:
      - **Languages:** Python, C++, JavaScript
-     - **Frontend:** HTML5, CSS3, Bootstrap, JavaScript
+     - **Frontend:** HTML5, CSS3, Bootstrap
      - **Backend:** Node.js, Express.js
      - **Database:** MySQL
      - **Tools:** Git, GitHub
@@ -41,13 +41,13 @@
    - **Amazon Clone** (*HTML5/CSS3 frontend recreation practice project*).
 
 6. **Python Projects (Archive)**:
-   - Live search & filter for 8 Python utilities & games (*Snake, Pong, Turtle Crossing, Flash Card App, Password Manager, ISS Overhead Notifier, Blackjack, Quiz Game*).
+   - Live search & filter for 5 additional Python utilities & games (*Pong, Turtle Crossing, Flash Card App, Blackjack, Quiz Game*).
 
 7. **Currently Building**:
    - Real, focused highlights on Web Development, Python Systems, Backend Development, and Problem Solving.
 
 8. **Let's Connect**:
-   - Direct links for Email, LinkedIn, and GitHub profile (`https://github.com/sohamhinge08`) with one-click clipboard copying and contact form.
+   - Direct channels for Email, LinkedIn, and GitHub profile (`https://github.com/sohamhinge08`) with one-click clipboard copying and contact form.
 
 9. **Interactive Polish**:
    - Generative Web Audio API ambient ocean sound synthesizer in the navbar.
@@ -63,7 +63,7 @@
 /
 ├── index.html          # Semantic HTML5 markup, modals & sections
 ├── css/
-│   └── style.css       # Custom design system, ocean palette & responsive grid
+│   └── style.css       # Custom design system, dark ocean palette & responsive grid
 ├── js/
 │   ├── ocean.js        # Canvas wave physics & ship animation
 │   └── script.js       # GSAP ScrollTrigger, navigation, filter, audio synth & modal logic

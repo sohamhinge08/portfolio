@@ -1,8 +1,8 @@
 /* ==========================================================================
    SOHAM HINGE — DEVELOPER PORTFOLIO
    Interactive Ocean Canvas & Atmospheric Scene
-   Features: Multi-layer procedural sine waves, bobbing explorer ship silhouette,
-             night sky with golden celestial stars, and cyan wave crests.
+   Features: Multi-layer procedural sine waves, bobbing explorer galleon silhouette,
+             night sky with golden celestial stars, and bioluminescent wave crests.
    ========================================================================== */
 
 (function () {
@@ -16,6 +16,7 @@
   let width = (canvas.width = window.innerWidth);
   let height = (canvas.height = window.innerHeight);
 
+  // Check reduced motion
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Starfield & ambient particles
@@ -25,7 +26,7 @@
   for (let i = 0; i < starCount; i++) {
     stars.push({
       x: Math.random() * width,
-      y: Math.random() * (height * 0.68),
+      y: Math.random() * (height * 0.7),
       radius: Math.random() * 1.5 + 0.5,
       alpha: Math.random() * 0.8 + 0.2,
       twinkleSpeed: Math.random() * 0.02 + 0.005,
@@ -44,35 +45,35 @@
     pitch: 0,
   };
 
-  // Wave parameters using Ocean palette
+  // Wave parameters using Dark Ocean palette
   let time = 0;
   const waves = [
     {
       amplitude: 14,
       length: 0.0035,
       speed: 0.012,
-      color: 'rgba(7, 26, 43, 0.95)',
+      color: 'rgba(9, 19, 44, 0.95)',
       yOffset: 0.64,
     },
     {
       amplitude: 18,
       length: 0.0045,
       speed: 0.018,
-      color: 'rgba(10, 42, 64, 0.9)',
+      color: 'rgba(12, 28, 64, 0.9)',
       yOffset: 0.68,
     },
     {
       amplitude: 22,
       length: 0.003,
       speed: 0.024,
-      color: 'rgba(14, 77, 100, 0.85)',
+      color: 'rgba(15, 36, 82, 0.85)',
       yOffset: 0.73,
     },
     {
       amplitude: 26,
       length: 0.002,
       speed: 0.03,
-      color: 'rgba(5, 14, 24, 1.0)',
+      color: 'rgba(6, 11, 24, 1.0)',
       yOffset: 0.79,
     },
   ];
@@ -91,16 +92,17 @@
   }
   window.addEventListener('resize', onResize);
 
-  // Draw Sky & Celestial Nebula
+  // Draw Starfield & Deep Night Sky Gradient
   function drawSky() {
-    const skyGrad = ctx.createLinearGradient(0, 0, 0, height * 0.78);
-    skyGrad.addColorStop(0, '#050E18');
-    skyGrad.addColorStop(0.5, '#071A2B');
-    skyGrad.addColorStop(1, '#0E4D64');
+    // Night sky gradient
+    const skyGrad = ctx.createLinearGradient(0, 0, 0, height * 0.8);
+    skyGrad.addColorStop(0, '#030712');
+    skyGrad.addColorStop(0.5, '#060d1f');
+    skyGrad.addColorStop(1, '#0c1a3b');
     ctx.fillStyle = skyGrad;
     ctx.fillRect(0, 0, width, height);
 
-    // Subtle golden/cyan celestial dust
+    // Subtle celestial gold nebula glow
     const nebulaGrad = ctx.createRadialGradient(
       width * 0.5,
       height * 0.25,
@@ -109,8 +111,8 @@
       height * 0.25,
       width * 0.45
     );
-    nebulaGrad.addColorStop(0, 'rgba(214, 168, 79, 0.05)');
-    nebulaGrad.addColorStop(0.5, 'rgba(61, 182, 198, 0.03)');
+    nebulaGrad.addColorStop(0, 'rgba(234, 179, 8, 0.04)');
+    nebulaGrad.addColorStop(0.5, 'rgba(56, 189, 248, 0.03)');
     nebulaGrad.addColorStop(1, 'transparent');
     ctx.fillStyle = nebulaGrad;
     ctx.fillRect(0, 0, width, height * 0.75);
@@ -127,8 +129,8 @@
       ctx.beginPath();
       ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
       ctx.fillStyle = s.isGold
-        ? `rgba(232, 216, 176, ${s.alpha})`
-        : `rgba(240, 246, 252, ${s.alpha})`;
+        ? `rgba(254, 240, 138, ${s.alpha})`
+        : `rgba(224, 242, 254, ${s.alpha})`;
       ctx.fill();
     }
   }
@@ -136,7 +138,7 @@
   // Draw Distant Island Silhouette
   function drawDistantIslands() {
     ctx.save();
-    ctx.fillStyle = 'rgba(7, 26, 43, 0.75)';
+    ctx.fillStyle = 'rgba(7, 14, 30, 0.75)';
     ctx.beginPath();
     const baseY = height * 0.63;
     ctx.moveTo(0, baseY);
@@ -144,7 +146,7 @@
     // Left island peak
     ctx.quadraticCurveTo(width * 0.12, baseY - 35, width * 0.25, baseY);
     ctx.lineTo(width * 0.65, baseY);
-    // Right island peak
+    // Right mysterious island peak
     ctx.quadraticCurveTo(width * 0.78, baseY - 48, width * 0.9, baseY);
     ctx.lineTo(width, baseY);
     ctx.lineTo(width, height);
@@ -154,7 +156,7 @@
     ctx.restore();
   }
 
-  // Draw the Explorer Ship Silhouette
+  // Draw the Explorer Galleon Silhouette
   function drawShip(x, y, pitch) {
     ctx.save();
     ctx.translate(x, y);
@@ -162,8 +164,8 @@
 
     // Lantern Warm Gold Glow
     const lanternGlow = ctx.createRadialGradient(-18, -12, 1, -18, -12, 16);
-    lanternGlow.addColorStop(0, 'rgba(214, 168, 79, 0.85)');
-    lanternGlow.addColorStop(0.5, 'rgba(214, 168, 79, 0.25)');
+    lanternGlow.addColorStop(0, 'rgba(251, 191, 36, 0.85)');
+    lanternGlow.addColorStop(0.5, 'rgba(234, 179, 8, 0.3)');
     lanternGlow.addColorStop(1, 'transparent');
     ctx.fillStyle = lanternGlow;
     ctx.beginPath();
@@ -171,8 +173,8 @@
     ctx.fill();
 
     // Ship Hull
-    ctx.fillStyle = '#071A2B';
-    ctx.strokeStyle = '#D6A84F';
+    ctx.fillStyle = '#060b18';
+    ctx.strokeStyle = '#eab308';
     ctx.lineWidth = 1;
 
     ctx.beginPath();
@@ -186,7 +188,7 @@
     ctx.stroke();
 
     // Masts
-    ctx.strokeStyle = '#071A2B';
+    ctx.strokeStyle = '#060b18';
     ctx.lineWidth = 2.5;
 
     // Main Mast
@@ -201,9 +203,9 @@
     ctx.lineTo(-12, -22);
     ctx.stroke();
 
-    // Sails (Parchment Tint)
-    ctx.fillStyle = 'rgba(232, 216, 176, 0.92)';
-    ctx.strokeStyle = 'rgba(214, 168, 79, 0.6)';
+    // Sails (Parchment White-Gold Tint)
+    ctx.fillStyle = 'rgba(248, 250, 252, 0.9)';
+    ctx.strokeStyle = 'rgba(234, 179, 8, 0.6)';
     ctx.lineWidth = 1;
 
     // Main Sail
@@ -225,7 +227,7 @@
     ctx.stroke();
 
     // Small Gold Flag
-    ctx.fillStyle = '#D6A84F';
+    ctx.fillStyle = '#f59e0b';
     ctx.beginPath();
     ctx.moveTo(2, -28);
     ctx.lineTo(10, -26);
@@ -270,7 +272,7 @@
 
     // Subtle Wave Crest
     if (isTopLayer || waveIndex === 2) {
-      ctx.strokeStyle = waveIndex === 2 ? 'rgba(61, 182, 198, 0.4)' : 'rgba(214, 168, 79, 0.25)';
+      ctx.strokeStyle = waveIndex === 2 ? 'rgba(56, 189, 248, 0.4)' : 'rgba(234, 179, 8, 0.25)';
       ctx.lineWidth = 1.5;
       ctx.stroke();
     }
