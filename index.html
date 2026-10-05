@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soham Hinge | Computer Engineering Student & Developer Portfolio</title>
+  <meta name="description" content="Official developer portfolio of Soham Hinge — Computer Engineering Student, Full-Stack Developer, and Python builder. Exploring the world of code, one project at a time.">
+  <meta name="keywords" content="Soham Hinge, Developer Portfolio, Computer Engineering, Python Developer, Full Stack, GDG on Campus, Web Development">
+  <meta name="author" content="Soham Hinge">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Soham Hinge | Developer Portfolio">
+  <meta property="og:description" content="Exploring the world of code, one project at a time. Developer Portfolio × Grand Line Adventure.">
+  <meta name="theme-color" content="#060b18">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Cinzel+Decorative:wght@700;900&family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS (Allowed Framework) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header>
+    <nav class="navbar-custom" id="mainNavbar" aria-label="Main Navigation">
+      <div class="nav-container">
+        <!-- Brand Logo -->
+        <a href="#home" class="brand-logo" aria-label="Soham Hinge Home">
+          <div class="brand-emblem" title="Log Pose Navigation Emblem">
+            <!-- Compass SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1.5-13.5l-2 6.5 6.5 2-2-6.5-2.5-2z"/>
+            </svg>
+          </div>
+          <div class="brand-info">
+            <span class="brand-name">SOHAM HINGE</span>
+            <span class="brand-tag">GRAND LINE EXPEDITION</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu" role="menubar">
+          <li role="none"><a href="#home" class="nav-link-item active" role="menuitem">HOME</a></li>
+          <li role="none"><a href="#about" class="nav-link-item" role="menuitem">ABOUT</a></li>
+          <li role="none"><a href="#skills" class="nav-link-item" role="menuitem">SKILLS</a></li>
+          <li role="none"><a href="#journey" class="nav-link-item" role="menuitem">JOURNEY</a></li>
+          <li role="none"><a href="#projects" class="nav-link-item" role="menuitem">PROJECTS</a></li>
+          <li role="none"><a href="#archive" class="nav-link-item" role="menuitem">ARCHIVE</a></li>
+          <li role="none"><a href="#contact" class="nav-link-item" role="menuitem">CONTACT</a></li>
+        </ul>
+
+        <!-- Nav Controls -->
+        <div class="nav-controls">
+          <!-- Ambient Audio Synthesizer Toggle -->
+          <button class="btn-nav-audio" id="audioToggleBtn" title="Toggle Ambient Ocean Audio" aria-label="Toggle Ambient Audio">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 3v9.28a4.39 4.39 0 00-1.5-.28 4.5 4.5 0 104.5 4.5V6h4V3h-7z"/>
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger Trigger -->
+          <button class="nav-hamburger" id="navHamburger" aria-label="Toggle Mobile Navigation" aria-expanded="false" aria-controls="mobileDrawer">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div>
+      <div class="d-flex align-items-center gap-3 mb-4 pb-3 border-bottom border-secondary border-opacity-25">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#facc15"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 4.5l-2 6.5 6.5 2-2-6.5-2.5-2z"/></svg>
+        </div>
+        <div>
+          <div class="font-display fw-bold text-white fs-5">SOHAM HINGE</div>
+          <div class="font-mono text-gold fs-7" style="font-size: 0.72rem;">DEVELOPER VOYAGE</div>
+        </div>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link active"><span>01.</span> HOME</a></li>
+        <li><a href="#about" class="mobile-nav-link"><span>02.</span> ABOUT</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><span>03.</span> SKILLS</a></li>
+        <li><a href="#journey" class="mobile-nav-link"><span>04.</span> JOURNEY</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><span>05.</span> PROJECTS</a></li>
+        <li><a href="#archive" class="mobile-nav-link"><span>06.</span> ARCHIVE</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><span>07.</span> CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="pt-4 border-top border-secondary border-opacity-25">
+      <div class="font-mono text-muted mb-2" style="font-size: 0.75rem;">QUICK DISPATCH</div>
+      <a href="mailto:YOUR_EMAIL" class="btn-grand-line btn-primary-gold btn-sm-custom w-100">SEND INQUIRY</a>
+    </div>
+  </div>
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- =========================================================================
+       2. HERO SECTION
+       ========================================================================= -->
+  <main>
+    <section class="hero-section" id="home" aria-label="Hero Section">
+      <!-- Procedural Canvas Background: Wave Physics & Starfield -->
+      <canvas id="oceanCanvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <!-- Nautical HUD Coordinates Badge -->
+        <div class="hero-hud-badge">
+          <span class="hud-radar-dot"></span>
+          <span>LAT 18° 31' N | LON 73° 51' E // GRAND LINE LOG POSE LOCKED</span>
+        </div>
+
+        <!-- Hero Headline -->
+        <h1 class="hero-name">
+          <span class="text-gold-gradient">SOHAM</span> HINGE
+        </h1>
+
+        <!-- Subtitle & Focus -->
+        <h2 class="hero-subtitle">
+          Computer Engineering Student | Developer | Builder
+        </h2>
+
+        <!-- Tagline -->
+        <p class="hero-tagline">
+          "Exploring the world of code, one project at a time."
+        </p>
+
+        <!-- CTA Buttons (Fully Functional Smooth Scrolls) -->
+        <div class="hero-cta-group">
+          <a href="#journey" class="btn-grand-line btn-primary-gold" id="btnHeroJourney">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+            EXPLORE MY JOURNEY
+          </a>
+          <a href="#projects" class="btn-grand-line btn-outline-ocean" id="btnHeroProjects">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+            VIEW PROJECTS
+          </a>
+        </div>
+
+        <!-- Quick Intel Pills -->
+        <div class="hero-quick-pills">
+          <div class="quick-pill">
+            <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+            <span>Full-Stack Architecture</span>
+          </div>
+          <div class="quick-pill">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <span>Python & OOP Logic</span>
+          </div>
+          <div class="quick-pill">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/></svg>
+            <span>Relational MySQL Databases</span>
+          </div>
+          <div class="quick-pill">
+            <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+            <span>Continuous Builder</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator Prompt -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+        <svg class="scroll-compass-needle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" stroke="#ca8a04"></circle>
+          <polygon points="12,6 15,12 12,18 9,12" fill="#facc15" stroke="none"></polygon>
+        </svg>
+        <span>SCROLL TO CHART COURSE</span>
+      </a>
+    </section>
+
+    <!-- =========================================================================
+         3. ABOUT SECTION ("Captain's Logbook")
+         ========================================================================= -->
+    <section class="about-section" id="about" aria-label="About the Developer">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+            CAPTAIN'S LOG // ENTRY #2026
+          </div>
+          <h2 class="section-title">ABOUT THE DEVELOPER</h2>
+          <p class="section-subtitle">A candid snapshot of my engineering principles, passions, and voyage into software craftsmanship.</p>
+        </div>
+
+        <!-- Logbook Card Frame -->
+        <div class="logbook-card glass-card nautical-corner">
+          <!-- Top Bar -->
+          <div class="logbook-header-bar">
+            <div class="logbook-id">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="#facc15"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              <span>VOYAGE RECORD // SH-2026-CE</span>
+            </div>
+            <div class="logbook-status-badge">
+              <span class="status-beacon"></span>
+              <span>CURRENT STATUS: ACTIVE DEVELOPMENT</span>
+            </div>
+          </div>
+
+          <!-- Logbook Grid -->
+          <div class="logbook-grid">
+            <!-- Left Profile Dossier -->
+            <div class="profile-dossier">
+              <div class="dossier-avatar-wrap">
+                <!-- Compass Rose Crest -->
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
+                </svg>
+              </div>
+              <h3 class="dossier-name">Soham Hinge</h3>
+              <p class="dossier-role font-mono">Computer Engineering Student</p>
+
+              <ul class="dossier-specs-list">
+                <li class="dossier-spec-item">
+                  <span class="spec-key">DISCIPLINE:</span>
+                  <span class="spec-val">Computer Engineering</span>
+                </li>
+                <li class="dossier-spec-item">
+                  <span class="spec-key">LOCATION:</span>
+                  <span class="spec-val">Pune, Maharashtra, India</span>
+                </li>
+                <li class="dossier-spec-item">
+                  <span class="spec-key">CORE FOCUS:</span>
+                  <span class="spec-val">Web & Backend, Python</span>
+                </li>
+                <li class="dossier-spec-item">
+                  <span class="spec-key">EXPEDITION:</span>
+                  <span class="spec-val">GDG on Campus Recruit</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right Narrative Bio -->
+            <div class="bio-narrative">
+              <p class="bio-lead">
+                Hello, I am <strong class="text-gold">Soham Hinge</strong> — a computer engineering student passionate about constructing reliable software and unraveling how complex systems tick.
+              </p>
+              <p class="bio-paragraph">
+                My programming voyage started with simple curiosity and has expanded into hands-on exploration across full-stack web development, Python automation, and database architectures. I thrive on translating real-world problems into clean, modular code and working collaboratively to deliver dependable applications.
+              </p>
+              <p class="bio-paragraph">
+                Whether structuring relational schemas in MySQL, orchestrating backend endpoints with Node.js and Express, implementing object-oriented game engines in Python, or polishing interactive user interfaces with modern CSS, I am always seeking opportunities to expand my technical horizon.
+              </p>
+
+              <!-- Core Pillars Grid -->
+              <div class="pillars-grid">
+                <div class="pillar-item">
+                  <div class="pillar-icon">🧭</div>
+                  <h4 class="pillar-title">First Principles</h4>
+                  <p class="pillar-desc">Deep understanding over quick hacks. Grasping core data structures, protocols, and language semantics.</p>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon">⚡</div>
+                  <h4 class="pillar-title">Pragmatic Builder</h4>
+                  <p class="pillar-desc">Writing readable, maintainable code that solves practical problems and scales smoothly.</p>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon">🌊</div>
+                  <h4 class="pillar-title">Curiosity Driven</h4>
+                  <p class="pillar-desc">Constantly experimenting with new technologies, libraries, and open-source ecosystems.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. SKILLS SECTION ("My Crew")
+         ========================================================================= -->
+    <section class="skills-section" id="skills" aria-label="Skills and Technologies">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            TECH ARSENAL
+          </div>
+          <h2 class="section-title">MY CREW</h2>
+          <p class="section-subtitle">Battle-tested languages, frameworks, and developer tools powering every build.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-tabs" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Technologies</button>
+          <button class="filter-btn" data-filter="languages" role="tab" aria-selected="false">Core Languages</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend & Database</button>
+          <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">Tools & Workflow</button>
+        </div>
+
+        <!-- Skills Grid (Strictly Listed Skills) -->
+        <div class="skills-grid">
+          <!-- 1. Python -->
+          <div class="skill-card nautical-corner" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #38bdf8;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.91 2C6.98 2 7.37 4.14 7.37 4.14l.01 2.22h4.63v.68H5.08S2 6.69 2 11.66c0 4.96 2.7 4.8 2.7 4.8h1.61v-2.27s-.09-2.7 2.66-2.7h4.58s2.57.04 2.57-2.52V4.57S16.48 2 11.91 2zm-2.58 1.44a.8.8 0 110 1.6.8.8 0 010-1.6zm2.76 18.56c4.93 0 4.54-2.14 4.54-2.14l-.01-2.22H12v-.68h6.93s3.08.35 3.08-4.62c0-4.96-2.7-4.8-2.7-4.8h-1.61v2.27s.09 2.7-2.66 2.7H10.45s-2.57-.04-2.57 2.52v4.4s-.36 2.57 4.21 2.57zm2.58-1.44a.8.8 0 110-1.6.8.8 0 010 1.6z"/></svg>
+              </div>
+              <span class="skill-badge-category">Core Language</span>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-description">Applied in OOP architectures, desktop GUI applications (Tkinter), REST API automation, data handling, and game logic.</p>
+          </div>
+
+          <!-- 2. C++ -->
+          <div class="skill-card nautical-corner" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #60a5fa;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 10.5v3h-3v3h-3v-3h-3v-3h3v-3h3v3h3zm-8-3v3h-3v-3h3zm0 6v3h-3v-3h3zM9.5 5.5C5.91 5.5 3 8.41 3 12s2.91 6.5 6.5 6.5c2.4 0 4.5-1.3 5.6-3.2l-2.4-1.4c-.6 1.1-1.8 1.8-3.2 1.8-2.07 0-3.75-1.68-3.75-3.75S7.43 8.25 9.5 8.25c1.4 0 2.6.7 3.2 1.8l2.4-1.4C14 6.8 11.9 5.5 9.5 5.5z"/></svg>
+              </div>
+              <span class="skill-badge-category">Core Language</span>
+            </div>
+            <h3 class="skill-name">C++</h3>
+            <p class="skill-description">Foundational language for mastering memory layout, data structures, algorithms, and high-performance computation.</p>
+          </div>
+
+          <!-- 3. JavaScript -->
+          <div class="skill-card nautical-corner" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #facc15;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3zm10.72 13.91c.42.74 1.01 1.25 1.95 1.25 1 0 1.63-.5 1.63-1.2 0-.83-.67-1.13-1.8-1.62l-.62-.27c-1.78-.76-2.96-1.72-2.96-3.75 0-1.86 1.44-3.27 3.69-3.27 1.6 0 2.75.56 3.53 1.93l-1.8 1.16c-.39-.7-.81-.97-1.73-.97-.78 0-1.29.5-1.29 1.1 0 .73.5 1.04 1.54 1.49l.62.27c2.14.92 3.27 1.84 3.27 3.93 0 2.25-1.76 3.48-4.14 3.48-2.31 0-3.72-1.1-4.43-2.5l2.03-1.07zm-7.06-.05c.34.61.64 1.12 1.34 1.12.7 0 1.14-.28 1.14-1.37v-6.56h2.47v6.62c0 2.4-1.42 3.49-3.5 3.49-1.92 0-3.05-1.02-3.61-2.28l2.16-1.02z"/></svg>
+              </div>
+              <span class="skill-badge-category">Core Language</span>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-description">Asynchronous mechanics, DOM interaction, event orchestration, API communications, and dynamic clientside logic.</p>
+          </div>
+
+          <!-- 4. HTML -->
+          <div class="skill-card nautical-corner" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #fb923c;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.56l4.07-1.13.55-6.17H7.38l.18 2.04h5.36l-.23 2.54-2.69.73-2.69-.73-.17-1.94H5.1l.33 3.77L12 17.56zM3 2l1.64 18.36L12 23l7.36-2.64L21 2H3zm15.4 6.22l-.17 1.94H8.7l-.18-2.04h10.05l.03.1z"/></svg>
+              </div>
+              <span class="skill-badge-category">Frontend</span>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-description">Semantic markup architecture, accessible structure (a11y), clean document hierarchy, and SEO standard compliance.</p>
+          </div>
+
+          <!-- 5. CSS -->
+          <div class="skill-card nautical-corner" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #38bdf8;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.18 2.9l1.45 16.27L12 21.1l6.37-1.93L19.82 2.9H4.18zm13.1 4.2H8.38l.2 2.22h8.5l-.6 6.82-4.48 1.25-4.48-1.25-.3-3.34h2.22l.16 1.7 2.4.65 2.4-.65.25-2.8H6.72L6.1 4.88h11.45l-.27 2.22z"/></svg>
+              </div>
+              <span class="skill-badge-category">Frontend</span>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-description">Custom responsive design, CSS Grid & Flexbox, glassmorphic styling, design tokens, and smooth micro-animations.</p>
+          </div>
+
+          <!-- 6. Bootstrap -->
+          <div class="skill-card nautical-corner" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #c084fc;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 7.5C17.5 5.57 15.93 4 14 4H7v16h7.5c2.21 0 4-1.79 4-4 0-1.42-.74-2.66-1.85-3.37.53-.62.85-1.44.85-2.38v-.75zM10 7h4c.83 0 1.5.67 1.5 1.5S14.83 10 14 10h-4V7zm4.5 10H10v-4h4.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z"/></svg>
+              </div>
+              <span class="skill-badge-category">Frontend</span>
+            </div>
+            <h3 class="skill-name">Bootstrap</h3>
+            <p class="skill-description">Responsive grid systems, utility workflows, accessible modals, and rapid production-ready layout scaffolding.</p>
+          </div>
+
+          <!-- 7. Node.js -->
+          <div class="skill-card nautical-corner" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #4ade80;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3.5 6.9v9.8L12 22l8.5-4.9V6.9L12 2zm6.5 13.9l-6.5 3.8-6.5-3.8V7.9l6.5-3.8 6.5 3.8v8z"/></svg>
+              </div>
+              <span class="skill-badge-category">Backend</span>
+            </div>
+            <h3 class="skill-name">Node.js</h3>
+            <p class="skill-description">Event-driven server runtime for handling asynchronous I/O, middleware pipelines, and scalable backend workflows.</p>
+          </div>
+
+          <!-- 8. Express.js -->
+          <div class="skill-card nautical-corner" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #e2e8f0;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+              </div>
+              <span class="skill-badge-category">Backend</span>
+            </div>
+            <h3 class="skill-name">Express.js</h3>
+            <p class="skill-description">RESTful routing architectures, custom middleware implementation, error handling, and server-client integration.</p>
+          </div>
+
+          <!-- 9. MySQL -->
+          <div class="skill-card nautical-corner" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #38bdf8;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm0 2c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2zm6 12c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V17zm0-4c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V13z"/></svg>
+              </div>
+              <span class="skill-badge-category">Database</span>
+            </div>
+            <h3 class="skill-name">MySQL</h3>
+            <p class="skill-description">Relational schema design, entity relationships, query writing, indexing, and persistent transactional storage.</p>
+          </div>
+
+          <!-- 10. Git -->
+          <div class="skill-card nautical-corner" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #fb7185;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.7 10.5l-6.2-6.2c-.4-.4-1-.4-1.4 0l-1.6 1.6 2.1 2.1c.4-.1.8 0 1.1.3.5.5.5 1.4 0 1.9-.5.5-1.4.5-1.9 0-.3-.3-.4-.7-.3-1.1L9.4 7l-5.6 5.6c-.4.4-.4 1 0 1.4l6.2 6.2c.4.4 1 .4 1.4 0l5.5-5.5c.4-.4.4-1 0-1.4l-2.1-2.1c.1-.4 0-.8-.3-1.1-.5-.5-1.4-.5-1.9 0-.5.5-.5 1.4 0 1.9.3.3.7.4 1.1.3l2.1 2.1 3.9-3.9c.4-.4.4-1 0-1.4z"/></svg>
+              </div>
+              <span class="skill-badge-category">Tools & Workflow</span>
+            </div>
+            <h3 class="skill-name">Git</h3>
+            <p class="skill-description">Distributed version control, branch management, merge conflict resolution, and atomic commit practices.</p>
+          </div>
+
+          <!-- 11. GitHub -->
+          <div class="skill-card nautical-corner" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #ffffff;">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              </div>
+              <span class="skill-badge-category">Tools & Workflow</span>
+            </div>
+            <h3 class="skill-name">GitHub</h3>
+            <p class="skill-description">Repository management, collaborative pull requests, issue tracking, and static web deployments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. DEVELOPER JOURNEY ("The Voyage")
+         ========================================================================= -->
+    <section class="journey-section" id="journey" aria-label="Developer Journey Timeline">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+            LOG POSE TRAJECTORY
+          </div>
+          <h2 class="section-title">THE VOYAGE</h2>
+          <p class="section-subtitle">A charted route across islands of knowledge, progressively mastering fundamentals to full-stack systems.</p>
+        </div>
+
+        <!-- Voyage Timeline -->
+        <div class="voyage-timeline-wrapper">
+          <!-- Animated Center Route Line -->
+          <div class="voyage-route-line">
+            <div class="voyage-route-progress" id="voyageProgress"></div>
+          </div>
+
+          <!-- Milestone 1: HTML & CSS -->
+          <div class="voyage-milestone left-node">
+            <div class="milestone-marker" title="Island 1: Foundations">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>
+            </div>
+            <div class="milestone-card nautical-corner">
+              <span class="milestone-stage-tag">STAGE 01 // FIRST HORIZON</span>
+              <h3 class="milestone-title">HTML & CSS</h3>
+              <p class="milestone-desc">Set sail with document hierarchy, semantic tagging, CSS styling rules, Box Model mechanics, and responsive fluid layouts.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 2: JavaScript -->
+          <div class="voyage-milestone right-node">
+            <div class="milestone-marker" title="Island 2: Dynamic Logic">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>
+            </div>
+            <div class="milestone-card nautical-corner">
+              <span class="milestone-stage-tag">STAGE 02 // DYNAMIC WATERS</span>
+              <h3 class="milestone-title">JavaScript</h3>
+              <p class="milestone-desc">Breathed life into web pages with DOM manipulation, event listeners, asynchronous operations, and modern ES6+ paradigms.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 3: Python -->
+          <div class="voyage-milestone left-node">
+            <div class="milestone-marker" title="Island 3: Scripting">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>
+            </div>
+            <div class="milestone-card nautical-corner">
+              <span class="milestone-stage-tag">STAGE 03 // THE GRAND JOURNEY</span>
+              <h3 class="milestone-title">Python</h3>
+              <p class="milestone-desc">Mastered core scripting, procedural programming, data structures, list comprehensions, and rapid algorithm development.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 4: OOP -->
+          <div class="voyage-milestone right-node">
+            <div class="milestone-marker" title="Island 4: Architecture">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>
+            </div>
+            <div class="milestone-card nautical-corner">
+              <span class="milestone-stage-tag">STAGE 04 // VESSEL ARCHITECTURE</span>
+              <h3 class="milestone-title">Object-Oriented Programming</h3>
+              <p class="milestone-desc">Architected scalable code using classes, inheritance, encapsulation, polymorphism, and modular game engines (Snake, Pong).</p>
+            </div>
+          </div>
+
+          <!-- Milestone 5: APIs & Automation -->
+          <div class="voyage-milestone left-node">
+            <div class="milestone-marker" title="Island 5: External Streams">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>
+            </div>
+            <div class="milestone-card nautical-corner">
+              <span class="milestone-stage-tag">STAGE 05 // EXTERNAL STREAMS</span>
+              <h3 class="milestone-title">APIs & Automation</h3>
+              <p class="milestone-desc">Connected systems to external endpoints, computed geospatial coordinates (ISS Tracker), and automated notification pipelines.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 6: Node.js & Express -->
+          <div class="voyage-milestone right-node">
+            <div class="milestone-marker" title="Island 6: Server Tides">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>
+            </div>
+            <div class="milestone-card nautical-corner">
+              <span class="milestone-stage-tag">STAGE 06 // SERVER TIDES</span>
+              <h3 class="milestone-title">Node.js / Express</h3>
+              <p class="milestone-desc">Engineered server-side architectures, RESTful API controllers, custom middleware chains, and dynamic template rendering.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 7: MySQL / Databases -->
+          <div class="voyage-milestone left-node">
+            <div class="milestone-marker" title="Island 7: The Data Vault">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>
+            </div>
+            <div class="milestone-card nautical-corner">
+              <span class="milestone-stage-tag">STAGE 07 // THE DATA VAULT</span>
+              <h3 class="milestone-title">MySQL / Databases</h3>
+              <p class="milestone-desc">Mastered relational database modeling, structured query design, foreign key constraints, and transactional data integrity.</p>
+            </div>
+          </div>
+
+          <!-- Milestone 8: Full-Stack Projects -->
+          <div class="voyage-milestone right-node">
+            <div class="milestone-marker" title="Island 8: High Seas">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>
+            </div>
+            <div class="milestone-card nautical-corner">
+              <span class="milestone-stage-tag">STAGE 08 // HIGH SEAS INTEGRATION</span>
+              <h3 class="milestone-title">Full-Stack Projects</h3>
+              <p class="milestone-desc">Synthesized all layers into comprehensive end-to-end applications, team collaborations, and deployment-ready software.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. FEATURED PROJECTS ("My Treasure")
+         ========================================================================= -->
+    <section class="projects-section" id="projects" aria-label="Featured Projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+            BOUNTY VAULT
+          </div>
+          <h2 class="section-title">MY TREASURE</h2>
+          <p class="section-subtitle">Featured applications built with rigor, honest contribution disclosures, and clean architecture.</p>
+        </div>
+
+        <!-- Featured Projects Grid -->
+        <div class="featured-projects-grid">
+          
+          <!-- FEATURED PROJECT 1: Hospital Management System (Team Project) -->
+          <article class="treasure-project-card nautical-corner" aria-labelledby="proj1-title">
+            <div>
+              <div class="project-bounty-header">
+                <span class="bounty-seal">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  FLAGSHIP ARTIFACT
+                </span>
+                <span class="project-type-tag team-badge">Team Project</span>
+              </div>
+
+              <h3 class="project-title" id="proj1-title">Hospital Management System</h3>
+              <p class="project-desc">
+                A robust management platform designed to streamline clinical appointments, patient medical histories, doctor schedules, and ward operations through relational data workflows.
+              </p>
+
+              <!-- Honest Role Disclosure Callout -->
+              <div class="contribution-box">
+                <div class="contribution-box-title">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                  My Role & Contribution:
+                </div>
+                <p class="contribution-box-text">
+                  Developed the complete responsive frontend UI, contributed to MySQL database schema design and queries, integrated backend routes, and handled system debugging.
+                </p>
+                <div class="contribution-box-note">
+                  * Teammate Jayesh primarily engineered and led the core backend server architecture.
+                </div>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Express.js</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">EJS</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/hospital-management-system" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-github" aria-label="GitHub repository for Hospital Management System">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                GITHUB
+              </a>
+              <button class="btn-project btn-project-demo" data-project-key="hospital-management" aria-label="View Details and Demo for Hospital Management System">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                LIVE DEMO / INTEL
+              </button>
+            </div>
+          </article>
+
+          <!-- FEATURED PROJECT 2: ISS Overhead Notifier -->
+          <article class="treasure-project-card nautical-corner" aria-labelledby="proj2-title">
+            <div>
+              <div class="project-bounty-header">
+                <span class="bounty-seal">
+                  <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                  AUTOMATION ARTIFACT
+                </span>
+                <span class="project-type-tag">Python & APIs</span>
+              </div>
+
+              <h3 class="project-title" id="proj2-title">ISS Overhead Notifier</h3>
+              <p class="project-desc">
+                An automated Python service that computes real-time geospatial coordinates of the International Space Station against local coordinates and sunrise/sunset twilight timestamps to dispatch email alerts when the station is visible overhead.
+              </p>
+
+              <div class="contribution-box">
+                <div class="contribution-box-title">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                  Key Engineering:
+                </div>
+                <p class="contribution-box-text">
+                  Integrated dual REST APIs (Open Notify + Sunrise-Sunset), implemented tolerance math (±5° lat/lon), datetime parsing, and automated SMTP email notifications.
+                </p>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">REST APIs</span>
+                <span class="tech-badge">Requests</span>
+                <span class="tech-badge">SMTPLib</span>
+                <span class="tech-badge">Datetime Logic</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/iss-overhead-notifier" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-github" aria-label="GitHub repository for ISS Notifier">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                GITHUB
+              </a>
+              <button class="btn-project btn-project-demo" data-project-key="iss-notifier" aria-label="View Details for ISS Notifier">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                DEEP DIVE
+              </button>
+            </div>
+          </article>
+
+          <!-- FEATURED PROJECT 3: Snake Game -->
+          <article class="treasure-project-card nautical-corner" aria-labelledby="proj3-title">
+            <div>
+              <div class="project-bounty-header">
+                <span class="bounty-seal">
+                  <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                  OOP ARTIFACT
+                </span>
+                <span class="project-type-tag">Python OOP</span>
+              </div>
+
+              <h3 class="project-title" id="proj3-title">Snake Game</h3>
+              <p class="project-desc">
+                Classic arcade game engineered purely utilizing Object-Oriented Programming paradigms. Demonstrates modular class inheritance, collision detection algorithms, and high-score file persistence.
+              </p>
+
+              <div class="contribution-box">
+                <div class="contribution-box-title">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                  Architecture:
+                </div>
+                <p class="contribution-box-text">
+                  Decoupled `Snake`, `Food`, and `Scoreboard` classes; boundary clipping, tail collision algorithms, and persistent data file I/O.
+                </p>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">OOP</span>
+                <span class="tech-badge">Turtle Graphics</span>
+                <span class="tech-badge">File I/O</span>
+                <span class="tech-badge">Game Logic</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/python-snake-game" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-github w-100" aria-label="GitHub repository for Snake Game">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                VIEW GITHUB REPOSITORY
+              </a>
+            </div>
+          </article>
+
+          <!-- FEATURED PROJECT 4: Password Manager -->
+          <article class="treasure-project-card nautical-corner" aria-labelledby="proj4-title">
+            <div>
+              <div class="project-bounty-header">
+                <span class="bounty-seal">
+                  <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                  SECURITY ARTIFACT
+                </span>
+                <span class="project-type-tag">Python GUI</span>
+              </div>
+
+              <h3 class="project-title" id="proj4-title">Password Manager</h3>
+              <p class="project-desc">
+                A desktop credential management utility built in Python featuring randomized high-entropy password generation, clipboard synchronization, and search indexing over structured JSON storage.
+              </p>
+
+              <div class="contribution-box">
+                <div class="contribution-box-title">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                  Features:
+                </div>
+                <p class="contribution-box-text">
+                  Tkinter UI, JSON key-value store, duplicate prevention, exception safety (try/except/finally), and search query parser.
+                </p>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Tkinter</span>
+                <span class="tech-badge">JSON</span>
+                <span class="tech-badge">Pyperclip</span>
+                <span class="tech-badge">Data Handling</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/python-password-manager" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-github w-100" aria-label="GitHub repository for Password Manager">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                VIEW GITHUB REPOSITORY
+              </a>
+            </div>
+          </article>
+
+          <!-- FEATURED PROJECT 5: Amazon Clone -->
+          <article class="treasure-project-card nautical-corner" aria-labelledby="proj5-title">
+            <div>
+              <div class="project-bounty-header">
+                <span class="bounty-seal">
+                  <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                  FRONTEND ARTIFACT
+                </span>
+                <span class="project-type-tag">HTML & CSS</span>
+              </div>
+
+              <h3 class="project-title" id="proj5-title">Amazon Clone</h3>
+              <p class="project-desc">
+                An intensive frontend recreation and practice project built to study large-scale e-commerce UI patterns, multi-level dropdowns, CSS Grid product showcases, and responsive layouts.
+              </p>
+
+              <div class="contribution-box">
+                <div class="contribution-box-title">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                  Practice Disclosure:
+                </div>
+                <p class="contribution-box-text">
+                  Honest recreation of Amazon's frontend interface to master pure CSS Flexbox, multi-tier navigation bars, and cross-device media queries without utility frameworks.
+                </p>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">Flexbox</span>
+                <span class="tech-badge">Responsive UI</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/amazon-frontend-clone" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-github" aria-label="GitHub repository for Amazon Clone">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                GITHUB
+              </a>
+              <button class="btn-project btn-project-demo" data-project-key="amazon-clone" aria-label="View Details for Amazon Clone">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                LIVE DEMO
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. PYTHON PROJECT ARCHIVE ("Treasury of Scripts & Games")
+         ========================================================================= -->
+    <section class="archive-section" id="archive" aria-label="Python Project Archive">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+            ALGORITHMIC REPOSITORY
+          </div>
+          <h2 class="section-title">PYTHON PROJECT ARCHIVE</h2>
+          <p class="section-subtitle">A dedicated collection of object-oriented games, automation services, and utility applications.</p>
+        </div>
+
+        <!-- Archive Filter & Search Controls -->
+        <div class="archive-controls-bar">
+          <div class="archive-search-box">
+            <svg class="archive-search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input type="text" id="archiveSearch" class="archive-search-input" placeholder="Search archive by project name or technology..." aria-label="Search Python Archive">
+          </div>
+          <div class="archive-count-badge" id="archiveCount">8 DISCOVERIES</div>
+        </div>
+
+        <!-- Archive Grid -->
+        <div class="archive-grid">
+          
+          <!-- 1. Snake -->
+          <div class="archive-card nautical-corner">
+            <div>
+              <div class="archive-card-top">
+                <div class="archive-icon">🐍</div>
+                <span class="font-mono text-gold" style="font-size: 0.72rem;">OOP GAME</span>
+              </div>
+              <h3 class="archive-title">Snake</h3>
+              <p class="archive-desc">Arcade classic built with modular classes, boundary clipping, collision detection, and high-score tracking.</p>
+              <div class="archive-tags">
+                <span class="archive-tag">Python</span>
+                <span class="archive-tag">OOP</span>
+                <span class="archive-tag">Turtle</span>
+              </div>
+            </div>
+            <div class="archive-btn-wrap">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/python-snake-game" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-outline-ocean btn-sm-custom w-100">
+                GITHUB CODE
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Pong -->
+          <div class="archive-card nautical-corner">
+            <div>
+              <div class="archive-card-top">
+                <div class="archive-icon">🏓</div>
+                <span class="font-mono text-gold" style="font-size: 0.72rem;">2-PLAYER GAME</span>
+              </div>
+              <h3 class="archive-title">Pong</h3>
+              <p class="archive-desc">Two-player arcade game simulation featuring paddle velocity physics, real-time ball reflection, and score management.</p>
+              <div class="archive-tags">
+                <span class="archive-tag">Python</span>
+                <span class="archive-tag">Physics</span>
+                <span class="archive-tag">Game Loop</span>
+              </div>
+            </div>
+            <div class="archive-btn-wrap">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/python-pong-game" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-outline-ocean btn-sm-custom w-100">
+                GITHUB CODE
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Turtle Crossing -->
+          <div class="archive-card nautical-corner">
+            <div>
+              <div class="archive-card-top">
+                <div class="archive-icon">🐢</div>
+                <span class="font-mono text-gold" style="font-size: 0.72rem;">ARCADE LOGIC</span>
+              </div>
+              <h3 class="archive-title">Turtle Crossing</h3>
+              <p class="archive-desc">Frogger-inspired road crossing game featuring randomized vehicle wave generation and progressive difficulty scaling.</p>
+              <div class="archive-tags">
+                <span class="archive-tag">Python</span>
+                <span class="archive-tag">Randomization</span>
+                <span class="archive-tag">OOP</span>
+              </div>
+            </div>
+            <div class="archive-btn-wrap">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/turtle-crossing-game" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-outline-ocean btn-sm-custom w-100">
+                GITHUB CODE
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Flash Card App -->
+          <div class="archive-card nautical-corner">
+            <div>
+              <div class="archive-card-top">
+                <div class="archive-icon">🗂️</div>
+                <span class="font-mono text-gold" style="font-size: 0.72rem;">GUI & DATA</span>
+              </div>
+              <h3 class="archive-title">Flash Card App</h3>
+              <p class="archive-desc">Language acquisition utility with flip animation timers, CSV dictionary integration, and mastery tracking.</p>
+              <div class="archive-tags">
+                <span class="archive-tag">Python</span>
+                <span class="archive-tag">Pandas</span>
+                <span class="archive-tag">Tkinter</span>
+              </div>
+            </div>
+            <div class="archive-btn-wrap">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/python-flashcard-app" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-outline-ocean btn-sm-custom w-100">
+                GITHUB CODE
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. Password Manager -->
+          <div class="archive-card nautical-corner">
+            <div>
+              <div class="archive-card-top">
+                <div class="archive-icon">🔐</div>
+                <span class="font-mono text-gold" style="font-size: 0.72rem;">SECURITY</span>
+              </div>
+              <h3 class="archive-title">Password Manager</h3>
+              <p class="archive-desc">Desktop credential storage with dynamic password generation algorithms, clipboard copying, and JSON database search.</p>
+              <div class="archive-tags">
+                <span class="archive-tag">Python</span>
+                <span class="archive-tag">Tkinter</span>
+                <span class="archive-tag">JSON</span>
+              </div>
+            </div>
+            <div class="archive-btn-wrap">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/python-password-manager" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-outline-ocean btn-sm-custom w-100">
+                GITHUB CODE
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. ISS Overhead Notifier -->
+          <div class="archive-card nautical-corner">
+            <div>
+              <div class="archive-card-top">
+                <div class="archive-icon">🛰️</div>
+                <span class="font-mono text-gold" style="font-size: 0.72rem;">AUTOMATION</span>
+              </div>
+              <h3 class="archive-title">ISS Overhead Notifier</h3>
+              <p class="archive-desc">Automated orbital tracker querying REST APIs to calculate nighttime passes over Pune and dispatching alert emails.</p>
+              <div class="archive-tags">
+                <span class="archive-tag">Python</span>
+                <span class="archive-tag">REST APIs</span>
+                <span class="archive-tag">SMTP</span>
+              </div>
+            </div>
+            <div class="archive-btn-wrap">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/iss-overhead-notifier" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-outline-ocean btn-sm-custom w-100">
+                GITHUB CODE
+              </a>
+            </div>
+          </div>
+
+          <!-- 7. Blackjack -->
+          <div class="archive-card nautical-corner">
+            <div>
+              <div class="archive-card-top">
+                <div class="archive-icon">🃏</div>
+                <span class="font-mono text-gold" style="font-size: 0.72rem;">TERMINAL GAME</span>
+              </div>
+              <h3 class="archive-title">Blackjack</h3>
+              <p class="archive-desc">Console-based simulation of classic 21 with automatic ace adjustments, dealer strategy rules, and score tracking.</p>
+              <div class="archive-tags">
+                <span class="archive-tag">Python</span>
+                <span class="archive-tag">Logic</span>
+                <span class="archive-tag">Probability</span>
+              </div>
+            </div>
+            <div class="archive-btn-wrap">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/python-blackjack" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-outline-ocean btn-sm-custom w-100">
+                GITHUB CODE
+              </a>
+            </div>
+          </div>
+
+          <!-- 8. Quiz Game -->
+          <div class="archive-card nautical-corner">
+            <div>
+              <div class="archive-card-top">
+                <div class="archive-icon">❓</div>
+                <span class="font-mono text-gold" style="font-size: 0.72rem;">API INTEGRATION</span>
+              </div>
+              <h3 class="archive-title">Quiz Game</h3>
+              <p class="archive-desc">Trivia game powered by the Open Trivia Database API, structured with custom Question model and QuizBrain controller.</p>
+              <div class="archive-tags">
+                <span class="archive-tag">Python</span>
+                <span class="archive-tag">OOP</span>
+                <span class="archive-tag">REST API</span>
+              </div>
+            </div>
+            <div class="archive-btn-wrap">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/python-quiz-game" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-outline-ocean btn-sm-custom w-100">
+                GITHUB CODE
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. GITHUB & ACHIEVEMENTS ("Repository Intel")
+         ========================================================================= -->
+    <section class="achievements-section" id="intel" aria-label="Repository Intel & Focus">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/></svg>
+            REPOSITORY LOGBOOK
+          </div>
+          <h2 class="section-title">REPOSITORY INTEL</h2>
+          <p class="section-subtitle">Qualitative milestones, current engineering focus, and developer philosophy.</p>
+        </div>
+
+        <!-- Intel Highlights Grid -->
+        <div class="intel-grid">
+          <div class="intel-card glass-card nautical-corner">
+            <div class="intel-icon-header">🐙</div>
+            <h3 class="intel-title">Active GitHub Practice</h3>
+            <p class="intel-text">
+              Committed to building and version-controlling individual and collaborative projects. Utilizing atomic git commits, feature branching, and descriptive documentation.
+            </p>
+          </div>
+
+          <div class="intel-card glass-card nautical-corner">
+            <div class="intel-icon-header">🚢</div>
+            <h3 class="intel-title">Continuous Project Output</h3>
+            <p class="intel-text">
+              Consistently translating coursework and self-directed study into functional artifacts — ranging from terminal utilities to full-stack database-backed applications.
+            </p>
+          </div>
+
+          <div class="intel-card glass-card nautical-corner">
+            <div class="intel-icon-header">⚡</div>
+            <h3 class="intel-title">Technologies Mastered</h3>
+            <p class="intel-text">
+              Grounded in Python, C++, JavaScript, Node.js, Express.js, and MySQL. Actively advancing toward modern architectural patterns and distributed systems.
+            </p>
+          </div>
+
+          <div class="intel-card glass-card nautical-corner">
+            <div class="intel-icon-header">🎯</div>
+            <h3 class="intel-title">Current Expedition</h3>
+            <p class="intel-text">
+              Expanding backend system design, RESTful API reliability, performance optimization, and contributing to the Google Developer Groups (GDG) community.
+            </p>
+          </div>
+        </div>
+
+        <!-- Terminal Status Window -->
+        <div class="terminal-intel-box">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-title">soham@grandline-voyage: ~ (zsh)</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="term-prompt">soham@voyage:~$</span> <span class="term-cmd">curl -s https://api.github.com/users/sohamhinge/status</span>
+            </div>
+            <div class="terminal-line text-muted">
+              &gt; Fetching developer dossier... Status 200 OK
+            </div>
+            <div class="terminal-line">
+              {<br>
+              &nbsp;&nbsp;<span class="term-highlight">"name"</span>: <span class="text-gold">"Soham Hinge"</span>,<br>
+              &nbsp;&nbsp;<span class="term-highlight">"role"</span>: <span class="text-gold">"Computer Engineering Student"</span>,<br>
+              &nbsp;&nbsp;<span class="term-highlight">"mission"</span>: <span class="text-gold">"GDG on Campus Candidate & Problem Solver"</span>,<br>
+              &nbsp;&nbsp;<span class="term-highlight">"primary_stack"</span>: [<span class="text-cyan">"Python"</span>, <span class="text-cyan">"Node.js"</span>, <span class="text-cyan">"Express.js"</span>, <span class="text-cyan">"MySQL"</span>, <span class="text-cyan">"C++"</span>],<br>
+              &nbsp;&nbsp;<span class="term-highlight">"mindset"</span>: <span class="text-gold">"Exploring the world of code, one project at a time."</span><br>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. CONTACT SECTION ("Start a New Voyage")
+         ========================================================================= -->
+    <section class="contact-section" id="contact" aria-label="Contact Section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            START A NEW EXPEDITION
+          </div>
+          <h2 class="section-title">START A NEW VOYAGE</h2>
+          <p class="section-subtitle">Interested in collaborating, discussing technology, or considering me for GDG on Campus? Let's connect!</p>
+        </div>
+
+        <!-- Contact Wrapper Grid -->
+        <div class="contact-wrapper">
+          <!-- Left Direct Action Channels -->
+          <div class="contact-info-panel">
+            
+            <!-- Email Channel -->
+            <div class="contact-channel-card">
+              <div class="channel-left">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </div>
+                <div>
+                  <h3 class="channel-label">Email</h3>
+                  <div class="channel-val">YOUR_EMAIL</div>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn-channel-action" data-copy-target="YOUR_EMAIL" title="Copy Email to Clipboard">COPY</button>
+                <a href="mailto:YOUR_EMAIL" class="btn-channel-action">COMPOSE</a>
+              </div>
+            </div>
+
+            <!-- LinkedIn Channel -->
+            <div class="contact-channel-card">
+              <div class="channel-left">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                </div>
+                <div>
+                  <h3 class="channel-label">LinkedIn</h3>
+                  <div class="channel-val">YOUR_LINKEDIN_URL</div>
+                </div>
+              </div>
+              <a href="https://linkedin.com/in/YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="btn-channel-action">CONNECT</a>
+            </div>
+
+            <!-- GitHub Channel -->
+            <div class="contact-channel-card">
+              <div class="channel-left">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                </div>
+                <div>
+                  <h3 class="channel-label">GitHub</h3>
+                  <div class="channel-val">YOUR_GITHUB_URL</div>
+                </div>
+              </div>
+              <a href="https://github.com/YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="btn-channel-action">EXPLORE</a>
+            </div>
+          </div>
+
+          <!-- Right Interactive Message Form -->
+          <div class="contact-form-panel">
+            <h3 class="font-display fs-4 text-white mb-3">Send a Dispatch</h3>
+            <p class="text-secondary fs-6 mb-4">Leave a message and I'll respond as soon as my ship makes port.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" class="form-control-custom" placeholder="e.g. Captain Monkey D. Luffy" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email Address</label>
+                <input type="email" id="contactEmail" class="form-control-custom" placeholder="e.g. recruiter@gdg.community" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Voyage Objective / Message</label>
+                <textarea id="contactMessage" class="form-control-custom" rows="4" placeholder="Share opportunities, project ideas, or recruitment queries..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-grand-line btn-primary-gold w-100">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                DISPATCH MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       10. FOOTER
+       ========================================================================= -->
+  <footer class="footer-custom" role="contentinfo">
+    <div class="container">
+      <div class="brand-emblem mx-auto mb-3" style="width: 52px; height: 52px;">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="#facc15"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+      </div>
+
+      <div class="footer-quote">"THE JOURNEY DOESN'T END HERE."</div>
+      <p class="footer-sub">Continuously exploring new technical depths and charting ambitious code voyages.</p>
+
+      <div class="footer-nav-links">
+        <a href="https://github.com/YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="footer-nav-link">GitHub</a>
+        <span class="text-secondary opacity-25">•</span>
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="footer-nav-link">LinkedIn</a>
+        <span class="text-secondary opacity-25">•</span>
+        <a href="mailto:YOUR_EMAIL" class="footer-nav-link">Email</a>
+        <span class="text-secondary opacity-25">•</span>
+        <a href="#home" class="footer-nav-link">Return to Port</a>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 <strong>Soham Hinge</strong>. All rights reserved.</div>
+        <div class="font-mono text-muted">ENGINEERED FOR GDG ON CAMPUS RECRUITMENT</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       11. FLOATING COMPASS & TOAST SYSTEM & MODALS
+       ========================================================================= -->
+  <!-- Floating Back To Top Button -->
+  <button class="back-to-top-btn" id="backToTop" title="Navigate to Top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+    </svg>
+  </button>
+
+  <!-- Custom Feedback Toast -->
+  <div class="custom-toast" id="customToast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+    <span id="toastMessage">Notification payload</span>
+  </div>
+
+  <!-- Dynamic Project Detail Modal (Bootstrap 5) -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <div>
+            <span class="project-type-tag mb-2 d-inline-block" id="modalProjectBadge">Project Details</span>
+            <h3 class="modal-title font-display fs-4 text-white" id="modalProjectTitle">Project Title</h3>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <div class="mb-4">
+            <h4 class="font-heading fs-6 text-gold mb-2">SYSTEM OVERVIEW</h4>
+            <p class="text-secondary" id="modalProjectOverview">Project overview description.</p>
+          </div>
+
+          <div class="contribution-box mb-4">
+            <div class="contribution-box-title">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+              HONEST ROLE DISCLOSURE & ARCHITECTURE:
+            </div>
+            <p class="contribution-box-text mb-0" id="modalProjectContribution">Detailed contribution breakdown.</p>
+          </div>
+
+          <div>
+            <h4 class="font-heading fs-6 text-gold mb-2">TECH STACK EMPLOYED</h4>
+            <div class="project-tech-stack" id="modalProjectTech">
+              <!-- Dynamically populated badges -->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer-custom">
+          <button type="button" class="btn-grand-line btn-outline-ocean btn-sm-custom" data-bs-dismiss="modal">CLOSE</button>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-outline-ocean btn-sm-custom" id="modalGithubBtn">GITHUB REPO</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-grand-line btn-primary-gold btn-sm-custom" id="modalDemoBtn">LAUNCH DEMO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       12. SCRIPTS & LIBRARIES
+       ========================================================================= -->
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- GSAP & ScrollTrigger (Allowed for silky animations) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Interactive Ocean Canvas -->
+  <script src="js/ocean.js"></script>
+
+  <!-- Core Script Logic -->
+  <script src="js/script.js"></script>
+</body>
+</html>
