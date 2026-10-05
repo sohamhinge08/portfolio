@@ -1983,3 +1983,28 @@ textarea.form-control-custom {
   outline: 2px solid var(--gold-400);
   outline-offset: 3px;
 }
+
+/* Portfolio image assets */
+.brand-emblem-image {
+  width: 72%;
+  height: 72%;
+  object-fit: contain;
+  display: block;
+}
+
+.profile-avatar-image {
+  width: 94px;
+  height: 94px;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+}
+
+.profile-spec-item {
+  gap: 0.9rem;
+}
+
+.spec-val {
+  text-align: right;
+  overflow-wrap: anywhere;
+}

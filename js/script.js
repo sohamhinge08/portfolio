@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
           toggleActions: 'play none none none',
         },
         y: 25,
-        opacity: 0,
+        opacity: 1,
         stagger: 0.05,
         duration: 0.55,
         ease: 'power2.out',
@@ -229,8 +229,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach((b) => b.classList.remove('active'));
+      filterBtns.forEach((b) => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
 
       const filterValue = btn.getAttribute('data-filter');
 
@@ -245,6 +249,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
+  });
+
+  // Ensure All Technologies is visible and active on initial page load.
+  const allSkillsBtn = document.querySelector('.filter-btn[data-filter="all"]');
+  if (allSkillsBtn) {
+    allSkillsBtn.classList.add('active');
+    allSkillsBtn.setAttribute('aria-selected', 'true');
+  }
+  filterBtns.forEach((btn) => {
+    if (btn !== allSkillsBtn) btn.setAttribute('aria-selected', 'false');
+  });
+  skillCards.forEach((card) => {
+    card.style.display = 'flex';
+    card.style.opacity = '1';
+    card.style.transform = 'scale(1)';
   });
 
   // ------------------------------------------------------------------------
