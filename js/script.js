@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------------------------------------
   // 6. Placeholder Link Interceptor & Clipboard Copy
   // ------------------------------------------------------------------------
-  const placeholderPatterns = ['YOUR_LINKEDIN_URL', 'YOUR_EMAIL', 'YOUR_DEMO_URL'];
+  const placeholderPatterns = ['YOUR_LINKEDIN_URL', 'hingesoham32@gmail.com', 'YOUR_DEMO_URL'];
 
   document.addEventListener('click', (e) => {
     const targetLink = e.target.closest('a');
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const mailtoSubject = encodeURIComponent(`Portfolio Message from ${name}`);
     const mailtoBody = encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`);
-    const mailtoUrl = `mailto:YOUR_EMAIL?subject=${mailtoSubject}&body=${mailtoBody}`;
+    const mailtoUrl = `mailto:hingesoham32@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
 
     setTimeout(() => {
       window.location.href = mailtoUrl;
@@ -475,8 +475,8 @@ document.addEventListener('DOMContentLoaded', () => {
       contribution:
         'Team project built with my friend Jayesh. I developed the complete frontend interface and worked on the database/schema side, while also contributing to backend integration and debugging. Jayesh primarily handled and led the core backend implementation.',
       tech: ['HTML', 'CSS', 'JavaScript', 'EJS', 'Node.js', 'Express', 'MySQL'],
-      github: 'https://github.com/sohamhinge08/hospital-management-system',
-      demo: '#',
+      github: 'https://github.com/voldigoadanos696-cloud/hospital-management-system',
+      demo: 'https://hospital-management-system-1dsx.onrender.com/',
     },
     'iss-notifier': {
       title: 'ISS Overhead Notifier',
@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contribution:
         'Built the REST API integrations with Open Notify and Sunrise-Sunset API, implemented coordinate calculation within ±5° latitude/longitude, and automated email dispatch using Python SMTPLib.',
       tech: ['Python', 'REST APIs', 'Requests', 'SMTPLib', 'Datetime'],
-      github: 'https://github.com/sohamhinge08/iss-overhead-notifier',
+      github: 'https://github.com/sohamhinge08/iss-head-notifier',
       demo: '#',
     },
     'snake-game': {
@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contribution:
         'Engineered decoupled classes for Snake body, Food spawning, and Scoreboard, with wall/tail collision detection algorithms and persistent high score tracking via file I/O.',
       tech: ['Python', 'OOP', 'Turtle Graphics', 'File I/O'],
-      github: 'https://github.com/sohamhinge08/python-snake-game',
+      github: 'https://github.com/sohamhinge08/Snake-Game-',
       demo: '#',
     },
     'password-manager': {
@@ -523,7 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contribution:
         'Built pure HTML5 markup and custom CSS3 (Flexbox & CSS Grid) to recreate the Amazon interface from scratch as an intensive study in responsive layouts.',
       tech: ['HTML5', 'CSS3', 'CSS Grid', 'Flexbox', 'Responsive Design'],
-      github: 'https://github.com/sohamhinge08/amazon-frontend-clone',
+      github: 'https://github.com/sohamhinge08/amazon_clone',
       demo: '#',
     },
   };
